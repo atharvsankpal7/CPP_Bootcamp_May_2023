@@ -4,7 +4,9 @@ using namespace std;
 class volume
 {
 public:
+    // Default constructor
     volume() {}
+    // Parameter
     volume(float r)
     {
         cout << "The volume of the sphere with radius " << r << " is " << (4 / 3) * 3.142 * r * r * r << endl;
@@ -21,6 +23,9 @@ public:
 
 int main()
 {
-    volume v1(2.1603), v2(3, 4), v3(3.65, 0.246);
+    volume v2(1.2);            // Sphere
+    volume v3(1, 12);          // Cone
+    volume v1(2.1603, 1.9999); // Cylinder
+
     return 0;
 }
